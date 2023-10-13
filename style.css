@@ -7,7 +7,13 @@ body {
     display: flex;
 }
 
-/* Style de la barre de navigation */
+.container-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Début style de la barre de navigation */
 .navbar {
     background-color: #444444;
     display: flex;
@@ -35,4 +41,94 @@ body {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+/* Fin du style de la barre de navigation */
+
+.title {
+    font-size: 32px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-shadow: 1px 1px 3px;
+}
+
+.subtitle {
+    color: #AAAAAA;
+    font-size: 14px;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/* Style du caroussel */
+input[type=radio] {
+    display: none;
+}
+
+.caroussel-card-container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.caroussel-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caroussel-card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.caroussel-card img {
+    border-radius: 10px;
+    
+}
+
+#item-1:checked~.caroussel-cards #icon-3,
+#item-2:checked~.caroussel-cards #icon-1,
+#item-3:checked~.caroussel-cards #icon-2 {
+    transform: translatex(-40%) scale(.8);
+    transition: all linear 0.2s;
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.caroussel-cards #icon-2,
+#item-2:checked~.caroussel-cards #icon-3,
+#item-3:checked~.caroussel-cards #icon-1 {
+    transform: translatex(40%) scale(.8);
+    transition: all linear 0.2s;
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.caroussel-cards #icon-1,
+#item-2:checked~.caroussel-cards #icon-2,
+#item-3:checked~.caroussel-cards #icon-3 {
+    transform: translatex(0) scale(1);
+    transition: all linear 0.2s;
+    opacity: 1;
+    z-index: 1;
+
+    img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
 }
