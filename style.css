@@ -1,10 +1,13 @@
 .container{
     display: flex;
 }
+.navbar{
+    background-color: grey;
+}
 .navbar ul{
     display: flex;
     flex-direction: row;
-    
+    gap:8%;
 }
 .navbar ul a{
     color:black;
