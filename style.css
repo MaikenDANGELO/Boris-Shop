@@ -3,14 +3,25 @@ body {
     padding: 0;
 }
 
+img {
+    margin-left: 10%;
+    width: 80%;
+}
+
 .container {
     display: flex;
 }
 
-.container-centered{
+.container-centered {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.image-border {
+    border-color:#333333;
+    border-style: solid;
+    border-width: 4px;
 }
 
 /* Début style de la barre de navigation */
@@ -60,75 +71,4 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-}
-
-/* Style du caroussel */
-input[type=radio] {
-    display: none;
-}
-
-.caroussel-card-container {
-    width: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
-.caroussel-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.caroussel-card {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform .4s ease;
-    cursor: pointer;
-}
-
-.caroussel-card img {
-    border-radius: 10px;
-    
-}
-
-#item-1:checked~.caroussel-cards #icon-3,
-#item-2:checked~.caroussel-cards #icon-1,
-#item-3:checked~.caroussel-cards #icon-2 {
-    transform: translatex(-40%) scale(.8);
-    transition: all linear 0.2s;
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked~.caroussel-cards #icon-2,
-#item-2:checked~.caroussel-cards #icon-3,
-#item-3:checked~.caroussel-cards #icon-1 {
-    transform: translatex(40%) scale(.8);
-    transition: all linear 0.2s;
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked~.caroussel-cards #icon-1,
-#item-2:checked~.caroussel-cards #icon-2,
-#item-3:checked~.caroussel-cards #icon-3 {
-    transform: translatex(0) scale(1);
-    transition: all linear 0.2s;
-    opacity: 1;
-    z-index: 1;
-
-    img {
-        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    }
 }
