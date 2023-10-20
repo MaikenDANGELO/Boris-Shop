@@ -1,0 +1,159 @@
+.navbar {
+    background-color: #444444;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 1px;
+}
+
+/* Liens dans la barre de navigation */
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Lien de la page actuelle */
+.navbar a.active {
+    background-color: #333333;
+    color: white;
+}
+
+/* Quand un lien est survolé */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media (max-width:390px) {
+    .navbar{
+        justify-content: center;
+    }
+    .navbar-phone-screen {
+        display: flex;
+    }
+
+    .navbar-full-screen {
+        display: none;
+    }
+}
+
+@media (min-width:390px) {
+    .navbar-phone-screen {
+        display: none;
+    }
+
+    .navbar-full-screen {
+        display: flex;
+    }
+}
+
+.nav-burger {
+    display: none;
+    flex-direction: column;
+}
+
+.navbar-phone-screen {
+   flex-direction: column;
+}
+
+/* Burger icon */
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Fin du style de la barre de navigation */
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+a:hover{
+    font-size: 16.15px;
+    color: rgb(130, 156, 156);
+}
+
+.panier {
+    margin: 5%;
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    width: 100%;
+}
+
+.souspanier{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.articlepanier{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5%;
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.article img{
+    width: 20%;
+    border: 1, 1, 1,black;
+}
+
+.checkoutpart{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.checkoutpart input{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+.checkouttext{
+    display: flex;
+    flex-direction: row;
+    gap: 90%;
+}
+
+.checkouttext1{
+    text-align: left;
+    width: 60%;
+}
+
+.checkouttext2{
+    text-justify: right;
+    width: 20%;
+}
+
+.checkoutbutton{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.checkoutbutton:hover{
+    background-color: rgb(130, 156, 156);
+    color: black;
+    font-size: 16.2px;
+    padding-top: 3.05%;
+    padding-bottom: 3.05%;
+}
