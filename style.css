@@ -175,7 +175,6 @@ a:hover{
 .checkouttext{
     display: flex;
     flex-direction: row;
-    gap: 90%;
 }
 
 .checkouttext1{
@@ -184,8 +183,8 @@ a:hover{
 }
 
 .checkouttext2{
-    text-justify: right;
-    width: 20%;
+    text-align: right;
+    width: 100%;
 }
 
 .checkoutbutton{

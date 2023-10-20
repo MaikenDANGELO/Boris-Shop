@@ -129,16 +129,14 @@ a:hover{
 .checkouttext{
     display: flex;
     flex-direction: row;
-    gap: 90%;
+    gap: 5%;
 }
 
 .checkouttext1{
-    text-align: left;
-    width: 60%;
+    width: 50%;
 }
 
 .checkouttext2{
-    text-justify: right;
     width: 20%;
 }
 
