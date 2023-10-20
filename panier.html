@@ -1,20 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Panier</title>
 </head>
+
 <body>
     <div class="navbar">
         <a class="active" href="/index.html">Home</a>
         <a href="/shop.html">Shop</a>
         <a href="#">Stories</a>
         <a href="#">About</a>
-        <a href="panier.html">Votre Panier</a>
+        <a style="align-items: right;" href="panier.html">Votre Panier</a>
         </ul>
     </div>
 
+    <div class="paniertitre">
+        <h1 style="position: relative; top: 10%; left: 6%;">Votre panier</h1>
+        <p>Pas encore prêt.e à payer ? <a href="shop.html"> Continuez votre shopping</a></p>
+    </div>
 
+    <div class="panier">
+
+        <div class="articlepanier">
+            <table style="max-width: 50%;">
+                <tbody>
+                    <tr>
+                        <td><img style="max-width: 80%; max-height: 80%;"
+                                src="/images/Panier/t-shirt-poche-homme-intemporel-noir-made-in-france.jpg" alt="image">
+                        </td>
+
+                        <td>
+                            <h4>T-SHIRT NOIR</h4>
+                            <p>Taille : L<br> Quantité : 1</p>
+                            <h4>39€</h4>
+                        </td>
+                        <td><a href="#">Supprimer</a></td>
+                    </tr>
+                    <tr>
+                        <td><img style="max-width: 80%; max-height: 80%;"
+                                src="/images/Panier/t-shirt-poche-homme-intemporel-noir-made-in-france.jpg" alt="image">
+                        </td>
+                        <td>
+                            <h4>T-SHIRT NOIR</h4>
+                            <p>Taille : L<br> Quantité : 1</p>
+                            <h4>39€</h4>
+                        </td>
+                        <td><a href="#">Supprimer</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="checkoutpart">
+            <h2>Résumé de commande</h2>
+            <form>
+                <input id="reductioncode" name="reductioncode" class="reductioncode"
+                    placeholder="Entrez votre code de réduction ici"></input>
+            </form>
+            <div class="total">
+                <table>
+                    <tbody>
+                        <tr>
+                        <td>Sous total : </td>
+                        <td>78€</td>
+                        </tr>
+                    <tr>
+                        <td>Livraison : </td>
+                        <td><em>Calculé à la prochaine étape</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <table>
+                    <td>Total : </td>
+                    <td>78€</td>
+                </table>
+                <button>Procéder au paiement</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="orderinfo">
+        <h3>Information de commande</h3>
+        <hr>
+        <h5>Politique de retour</h5>
+        <p>Ceci est un exemple de politique de retour, ce qui est tout ce dont vous avez besoin de savoir à propos de
+            notre politique de retour.</p>
+        <hr>
+        <h5>Options de livraison</h5>
+        <hr>
+        <h5>Options de livraison</h5>
+        <hr>
+    </div>
 </body>
+<footer>
+    <div class="footer">
+        <p>PIEDS</p>
+    </div>
+</footer>
+
 </html>
