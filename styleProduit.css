@@ -9,9 +9,24 @@ label {
     padding: 2px 5px;
   }
 
+
+.image{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+    box-shadow: inset;
+}
+
+.machin{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
 h2{
 width: 450px;
-height: 60px;
+height: 35px;
 border: solid rgb(0, 0, 0) 0px;
 margin-left: 50px;
 margin-top: 50px;
@@ -30,11 +45,12 @@ font
 }
  
 
-.increment{
-    border: solid gray 2px;
+.quantite {
+    
     width: 100px;
     height: 30px;
     margin-left: 50px;
+    border: solid gray  2px;
 }
 
 .taille {
@@ -53,16 +69,13 @@ font
     color: white;
     margin-left: 50px;
 }
-.image{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 400px;
-    height: 400px;
-    box-shadow: inset;
+
+.livraison {
+  border: solid gray 1px;
+  width: 200px;
+  height: 300px;
 }
 
-.machin{
-  display: flex;
-  flex-direction: row;
-  gap: 2%;
+.textlivr{
+  margin-left: 1%;
 }
