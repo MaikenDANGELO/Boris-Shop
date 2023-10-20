@@ -21,13 +21,13 @@ header {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    margin-right: 20px;
+    margin-left: 20px;
     float: left;
 }
 
 .main-container {
     width: 75%;
-    float: left;
+    float: right; /* Aligner le contenu à droite */
 }
 
 .filters label {
@@ -141,4 +141,3 @@ footer {
         margin-right: 0;
     }
 }
-            
