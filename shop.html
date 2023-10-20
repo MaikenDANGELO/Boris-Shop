@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleCatalogue.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script_navbar.js"></script>
     <title>Catalogue en ligne</title>
 </head>
 <body>
+    
+    <div class="navbar">
+        <div class="navbar-full-screen">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/shop.html">Shop</a>
+            <a href="panier.html">Votre panier</a>
+        </div>
+        <div id="navbar-phone-screen" class="navbar-phone-screen">
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <div id="nav-burger" class="nav-burger">
+                <a href="/index.html">Home</a>
+                <a class="active" href="/shop.html">Shop</a>
+                <a href="panier.html">Votre Panier</a>
+            </div>
+        </div>
+    </div>
+
     <header>
         <h1>blabla navbar</h1>
     </header>

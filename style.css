@@ -54,12 +54,13 @@ img {
     color: black;
 }
 
-@media (max-width:390px) {
+@media (max-width: 390px) {
     .navbar{
         justify-content: center;
     }
     .navbar-phone-screen {
         display: flex;
+        width: 25%;
     }
 
     .navbar-full-screen {
@@ -89,11 +90,11 @@ img {
 /* Burger icon */
 
 .burger-icon span {
-    display: block;
-    width: 35px;
+    display: flex;
+    width: 50%;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 6px 25%;
 }
 
 /* Fin du style de la barre de navigation */

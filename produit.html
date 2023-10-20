@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produit</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script_navbar.js"></script>
     <link rel="stylesheet" href="styleProduit.css">
 
 </head>
 
 <body>
     <div class="navbar">
-        <a class="active" href="/index.html">Home</a>
-        <a href="/shop.html">Shop</a>
-        <a href="#">Stories</a>
-        <a href="#">About</a>
-        <a href="panier.html">Votre Panier</a>
-        </ul>
+        <div class="navbar-full-screen">
+            <a href="/index.html">Home</a>
+            <a href="/shop.html">Shop</a>
+            <a href="panier.html">Votre panier</a>
+        </div>
+        <div id="navbar-phone-screen" class="navbar-phone-screen">
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <div id="nav-burger" class="nav-burger">
+                <a href="/index.html">Home</a>
+                <a href="/shop.html">Shop</a>
+                <a href="panier.html">Votre Panier</a>
+            </div>
+        </div>
     </div>
     <div class="machin">
         <div>
