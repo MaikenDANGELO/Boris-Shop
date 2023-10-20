@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script_navbar.js"></script>
     <title>Boris' Shop</title>
 </head>
 
 <body>
     <div class="navbar">
+<<<<<<< Updated upstream
         <a class="active" href="/index.html">Home</a>
         <a href="/shop.html">Shop</a>
         <a href="#">Stories</a>
         <a href="#">About</a>
         <a href="panier.html">Votre Panier</a>
         </ul>
+=======
+        <div class="navbar-full-screen">
+            <a class="active" href="/index.html">Home</a>
+            <a href="/shop.html">Shop</a>
+            <a href="#">Stories</a>
+            <a href="#">About</a>
+        </div>
+        <div id="navbar-phone-screen" class="navbar-phone-screen">
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <div id="nav-burger" class="nav-burger">
+                <a class="active" href="/index.html">Home</a>
+                <a href="/shop.html">Shop</a>
+                <a href="#">Stories</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+>>>>>>> Stashed changes
     </div>
     <div class="container title">Boris' Shop</div>
     <div class="container subtitle">Les stéréotypes sur les joueurs de League of Legends ne sont que des mythes, la

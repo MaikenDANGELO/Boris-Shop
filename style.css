@@ -19,7 +19,7 @@ img {
 }
 
 .image-border {
-    border-color:#333333;
+    border-color: #333333;
     border-style: solid;
     border-width: 4px;
 }
@@ -52,6 +52,48 @@ img {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+@media (max-width:390px) {
+    .navbar{
+        justify-content: center;
+    }
+    .navbar-phone-screen {
+        display: flex;
+    }
+
+    .navbar-full-screen {
+        display: none;
+    }
+}
+
+@media (min-width:390px) {
+    .navbar-phone-screen {
+        display: none;
+    }
+
+    .navbar-full-screen {
+        display: flex;
+    }
+}
+
+.nav-burger {
+    display: none;
+    flex-direction: column;
+}
+
+.navbar-phone-screen {
+   flex-direction: column;
+}
+
+/* Burger icon */
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 /* Fin du style de la barre de navigation */
