@@ -31,10 +31,6 @@
             </div>
         </div>
     </div>
-
-    <header>
-        <h1>blabla navbar</h1>
-    </header>
     <div class="sorting">
         <label for="sort-by">Trier par :</label>
         <select id="sort-by">
@@ -44,19 +40,40 @@
     </div>
     <div class="main-container">
         <div class="filters">
-            <label for="category-filter">Catégorie :</label>
-            <select id="category-filter">
-                <option value="all">Catégories</option>
-                <option value="category1">Vêtement</option>
-                <option value="category2">Divers</option>
-            </select>
-            <label for="color-filter">Couleur :</label>
-            <select id="color-filter">
-                <option value="all">Toutes les couleurs</option>
-                <option value="red">Rouge</option>
-                <option value="blue">Bleu</option>
-                <option value="white">Blanc</option>
-            </select>
+            <label>Catégorie :</label>
+            <div>
+                <input type="radio" id="all-categories" name="category" value="all" checked>
+                <label for="all-categories">Toutes les catégories</label>
+            </div>
+            <div>
+                <input type="radio" id="category1" name="category" value="category1">
+                <label for="category1">Vêtement</label>
+            </div>
+            <div>
+                <input type="radio" id="category2" name="category" value="category2">
+                <label for="category2">Divers</label>
+            </div>
+            <label>Couleur :</label>
+            <div>
+                <input type="radio" id="all-colors" name="color" value="all" checked>
+                <label for="all-colors">Toutes les couleurs</label>
+            </div>
+            <div>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Rouge</label>
+            </div>
+            <div>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Bleu</label>
+            </div>
+            <div>
+                <input type="radio" id="white" name="color" value="white">
+                <label for="white">Blanc</label>
+            </div>
+            <div>
+                <input type="radio" id="purple" name="color" value="purple">
+                <label for="purple">Violet</label>
+            </div>
         </div>
         <main class="main">
             <div class="product">
@@ -88,17 +105,17 @@
             </div>
             <div class="product">
                 <img src="/images/produit/turbo-chemtank.png" alt="Produit 4">
-                <h2>Produit 4</h2>
-                <p>Description du produit 4.</p>
-                <span class="category">Catégorie 2</span>
-                <span class="color"></span>
+                <h2>Chimico-Scaphandre Turbo</h2>
+                <p>Pour pouvoir se baigner dans le Malsaucy</p>
+                <span class="category">Vêtement</span>
+                <span class="color">Violet</span>
                 <span class="price">29,99 €</span>
                 <button>Acheter</button>
             </div>
             <div class="product">
                 <img src="/images/produit/doran-ring.png" alt="Produit 5">
                 <h2>Anneau de Doran</h2>
-                <p>Ne rend pas de mana mais rend bien</p>
+                <p>Ne rend pas de mana mais rend bien sur vous</p>
                 <span class="category">Divers</span>
                 <span class="color">Bleu</span>
                 <span class="price">39,99 €</span>
@@ -113,33 +130,6 @@
                 <span class="price">289,99 €</span>
                 <button>Acheter</button>
             </div>
-            <div class="product">
-                <img src="/images/produit/phage.webp" alt="Produit 7">
-                <h2>Phage</h2>
-                <p>Pour enfoncer les clous les plus coriaces</p>
-                <span class="category">Catégorie 1</span>
-                <span class="color">Blanc</span>
-                <span class="price">109,99 €</span>
-                <button>Acheter</button>
-            </div>
-            <div class="product">
-                <img src="/images/produit/sorcerers-shoes.png" alt="Produit 8">
-                <h2>Air Sorcier 1</h2>
-                <p>Pour se déplacer en toute élégance</p>
-                <span class="category">Vêtement</span>
-                <span class="color">Bleu</span>
-                <span class="price">109,99 €</span>
-                <button>Acheter</button>
-            </div>
-            <div class="product">
-                <img src="/images/produit/negatrons-cloak.png" alt="Produit 9">
-                <h2>Manteau de Négatron</h2>
-                <p>Cette cape permet de vous donne des stats de RM (Résistance au ManqueDeFlow)</p>
-                <span class="category">Vêtement</span>
-                <span class="color">Blanc</span>
-                <span class="price">89,99 €</span>
-                <button>Acheter</button>
-            </div>
         </main>
         <button id="show-more">Voir plus</button>
     </div>
@@ -148,4 +138,3 @@
     </footer>
     <script src="script.js"></script>
 </body>
-</html>

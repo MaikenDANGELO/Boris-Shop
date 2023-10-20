@@ -4,28 +4,28 @@ const showMoreButton = document.getElementById('show-more');
 
 const additionalProducts = [
     {
-        image: 'product7.jpg',
-        title: 'Produit 7',
-        description: 'Description du produit 7.',
-        category: 'Catégorie 1',
+        image: '/images/produit/phage.webp',
+        title: 'Phage',
+        description: 'Pour enfoncer les clous les plus coriaces',
+        category: 'Divers',
+        color: 'Blanc',
+        price: '109,99 €',
+    },
+    {
+        image: '/images/produit/sorcerers-shoes.png',
+        title: 'Air Sorcerer 1',
+        description: 'Pour se déplacer en toute élégance',
+        category: 'Vêtement',
         color: 'Bleu',
-        price: '32,99 €',
+        price: '109,99 €',
     },
     {
-        image: 'product8.jpg',
-        title: 'Produit 8',
-        description: 'Description du produit 8.',
-        category: 'Catégorie 2',
-        color: 'Rouge',
-        price: '42,99 €',
-    },
-    {
-        image: 'product9.jpg',
-        title: 'Produit 9',
-        description: 'Description du produit 9.',
-        category: 'Catégorie 1',
-        color: 'Vert',
-        price: '27,99 €',
+        image: '/images/produit/negatrons-cloak.png',
+        title: 'Manteau de Négatron',
+        description: 'Cette cape permet de vous donne des stats de RM (Résistance au ManqueDeFlow)',
+        category: 'Vêtement',
+        color: 'Blanc',
+        price: '89,99 €',
     },
 ];
 
