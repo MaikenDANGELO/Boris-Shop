@@ -21,13 +21,16 @@ header {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    margin-left: 20px;
     float: left;
+    margin-top: 200px;
+    margin-left: 45px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
     width: 75%;
-    float: right; /* Aligner le contenu à droite */
+    float: right;
 }
 
 .filters label {
@@ -43,7 +46,41 @@ header {
 }
 
 .sorting {
-    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.blue {
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.white {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.purple {
+    height: 25px;
+    width: 25px;
+    background-color: purple;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .sorting label {
@@ -52,12 +89,12 @@ header {
 
 .sorting select {
     padding: 5px;
+    margin-right: 10;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 20px;
 }
 
@@ -73,6 +110,7 @@ main {
 
 .product img {
     max-width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .product h2 {
@@ -127,13 +165,19 @@ footer {
     clear: both;
 }
 
-/* Media queries pour la réactivité */
-
 @media (max-width: 768px) {
-    .filters, .sorting {
+    .sorting {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;    
+    }
+    .filters {
         float: none;
         width: 100%;
         text-align: center;
+        margin: 0px ;
     }
 
     .main-container {
@@ -142,7 +186,7 @@ footer {
         margin-right: 0;
     }
 
-    .filters select, .sorting select {
+    .filters select {
         width: 100%;
     }
 
@@ -150,4 +194,84 @@ footer {
         width: 100%;
         margin-right: 0;
     }
+
+    .product img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .product h2 {
+        font-size: 1.5rem;
+    }
+
+    .product .category,
+    .product .color {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    #show-more {
+        font-size: 1.2rem;
+    }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked::before {
+    content: "\2714";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    animation-name: radio-select;
+    animation-duration: 0.5s;
+}
+
+@keyframes radio-select {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    button:hover:not(:active) {
+        transform: scale(1.1);
+    }
+
+    #show-more:hover:not(:active) {
+        transform: scale(1.1);
+    }
+}
+
+.product img:hover {
+    transform: scale(1.1);
 }

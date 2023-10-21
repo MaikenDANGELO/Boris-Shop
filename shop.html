@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleCatalogue.css">
     <link rel="stylesheet" href="style.css">
     <script src="script_navbar.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Catalogue en ligne</title>
 </head>
+
 <body>
-    
     <div class="navbar">
         <div class="navbar-full-screen">
             <a href="/index.html">Home</a>
@@ -38,86 +41,61 @@
             <option value="price-desc">Prix décroissant</option>
         </select>
     </div>
-    <div class="main-container">
-        <div class="filters">
-            <label>Catégorie :</label>
-            <div>
-                <input type="radio" id="all-categories" name="category" value="all" checked>
-                <label for="all-categories">Toutes les catégories</label>
-            </div>
-            <div>
-                <input type="radio" id="category1" name="category" value="category1">
-                <label for="category1">Vêtement</label>
-            </div>
-            <div>
-                <input type="radio" id="category2" name="category" value="category2">
-                <label for="category2">Divers</label>
-            </div>
-            <label>Couleur :</label>
-            <div>
-                <input type="radio" id="all-colors" name="color" value="all" checked>
-                <label for="all-colors">Toutes les couleurs</label>
-            </div>
-            <div>
-                <input type="radio" id="red" name="color" value="red">
-                <label for="red">Rouge</label>
-            </div>
-            <div>
-                <input type="radio" id="blue" name="color" value="blue">
-                <label for="blue">Bleu</label>
-            </div>
-            <div>
-                <input type="radio" id="white" name="color" value="white">
-                <label for="white">Blanc</label>
-            </div>
-            <div>
-                <input type="radio" id="purple" name="color" value="purple">
-                <label for="purple">Violet</label>
-            </div>
-        </div>
+    <div class="filters">
+        <label><input type="radio" class="category" name="category" value="all" checked>Tous</label>
+        <label><input type="radio" class="category" name="category" id="category-vetement" value="category1">Vêtements</label>
+        <label><input type="radio" class="category" name="category" id="category-divers" value="category2">Divers</label>
+        <br>
+        <label><input type="radio" name="color" id="color-all" value="all" checked>Toutes</label>
+        <label><input type="radio" name="color" id="color-blue" class="blue">
+            <input type="radio" name="color" id="color-purple" class="purple">
+            <input type="radio" name="color" id="color-white" class="white">    
+            <input type="radio" name="color" id="color-red" class="red"></label>
+    </div>
+    <div class="main-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <main class="main">
             <div class="product">
-                <img src="product1.jpg" alt="Produit 1">
-                <h2>Produit 1</h2>
-                <p>Description du produit 1.</p>
-                <span class="category">Catégorie 1</span>
-                <span class="color">Rouge</span>
-                <span class="price">19,99 €</span>
+                <img src="/images/produit/zhonyas-hourglass.png" alt="Produit 1">
+                <h2>Sablier de Zhonya</h2>
+                <p>Permet de voir à quel point vous perdez votre temps sur la faille</p>
+                <span data-category="category2" data-color="Blanc" class="category">Divers</span>
+                <span class="color">Blanc</span>
+                <span class="price">299,99 €</span>
                 <button>Acheter</button>
             </div>
             <div class="product">
-                <img src="images/produit/zz-rot.webp" alt="Produit 2">
+                <img src="/images/produit/zz-rot.webp" alt="Produit 2">
                 <h2>ZZ'Rot</h2>
                 <p>Peut servir de lampe</p>
-                <span class="category">Divers</span>
-                <span class="color">Violet</span>
+                <span data-category="category2" data-color="Violet" class="category">Divers</span>
+                <span data-color="Violet" class="color">Violet</span>
                 <span class="price">107,99 €</span>
                 <button>Acheter</button>
             </div>
             <div class="product">
                 <img src="/images/produit/amplifying-tome.png" alt="Produit 3">
                 <h2>Tome d'Amplification</h2>
-                <p>Contient probablement des informations utiles (à conditions de savoir lire le vieux Shurimien)</p>
-                <span class="category">Divers</span>
-                <span class="color">Rouge</span>
-                <span class="price">43,50 €</span>
+                <p>Peut-être utile à condition de savoir lire l'ancien shurimien</p>
+                <span data-category="category2" data-color="Blanc" class="category">Divers</span>
+                <span data-color="Rouge" class="color">Rouge</span>
+                <span class="price">44,99 €</span>
                 <button>Acheter</button>
             </div>
             <div class="product">
                 <img src="/images/produit/turbo-chemtank.png" alt="Produit 4">
                 <h2>Chimico-Scaphandre Turbo</h2>
                 <p>Pour pouvoir se baigner dans le Malsaucy</p>
-                <span class="category">Vêtement</span>
-                <span class="color">Violet</span>
-                <span class="price">29,99 €</span>
+                <span data-category="category1" data-color="Violet" class="category">Vetement</span>
+                <span data-color="Violet" class="color">Violet</span>
+                <span class="price">299,99 €</span>
                 <button>Acheter</button>
             </div>
             <div class="product">
                 <img src="/images/produit/doran-ring.png" alt="Produit 5">
                 <h2>Anneau de Doran</h2>
                 <p>Ne rend pas de mana mais rend bien sur vous</p>
-                <span class="category">Divers</span>
-                <span class="color">Bleu</span>
+                <span data-category="category2" data-color="Bleu" class="category">Divers</span>
+                <span data-color="Bleu" class="color">Bleu</span>
                 <span class="price">39,99 €</span>
                 <button>Acheter</button>
             </div>
@@ -125,16 +103,18 @@
                 <img src="/images/produit/edge-of-night.webp" alt="Produit 6">
                 <h2>Manteau De La Nuit</h2>
                 <p>Pour bloquer tous les rageux</p>
-                <span class="category">Vêtement</span>
-                <span class="color">Bleu</span>
-                <span class="price">289,99 €</span>
+                <span data-category="category1" data-color="Blanc" class="category">Vetement</span>
+                <span data-color="Blanc" class="color">Blanc</span>
+                <span class="price">299,99 €</span>
                 <button>Acheter</button>
             </div>
         </main>
         <button id="show-more">Voir plus</button>
     </div>
     <footer>
-        <p>&copy; 2023 Mon Catalogue en Ligne</p>
+        <p>&copy; Boris Shop</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
+</html>

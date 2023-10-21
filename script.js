@@ -78,7 +78,6 @@ categoryRadioButtons.forEach((radio) => {
 
 function filterProducts() {
     const selectedCategory = document.querySelector('input[name="category"]:checked').value;
-
     const products = document.querySelectorAll('.product');
 
     products.forEach((product) => {
