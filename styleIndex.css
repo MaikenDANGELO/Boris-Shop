@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+}
+
+.container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-border {
+    border-color: #333333;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.title {
+    font-size: 32px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-shadow: 1px 1px 3px;
+}
+
+.subtitle {
+    color: #AAAAAA;
+    font-size: 14px;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    img {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Style des produits a l'affiche */
+
+.display-product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    position: relative;
+}
+
+.display-product img {
+    max-width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.display-product img:hover {
+    transform: scale(1.025);
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
