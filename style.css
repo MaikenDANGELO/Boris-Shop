@@ -12,6 +12,12 @@ img {
     display: flex;
 }
 
+.container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 .container-centered {
     display: flex;
     justify-content: center;
@@ -229,18 +235,17 @@ a:hover{
     color: white;
 }
 
-footer {
+
+
+/* Fin Partie Panier */
+
+/* Style du footer */
+.footer {
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 10px;
     clear: both;
-}
-
-/* Fin Partie Panier */
-
-/* Style du footer */
-footer {
     margin-top: 10%;
 }
 
