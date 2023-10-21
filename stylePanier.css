@@ -170,6 +170,11 @@ form{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+@media (max-width: 1240px) {
+    .articleimg{
+        width: 50%;
+    }
+}
 
 @media (max-width: 1025px) {
     .cartpagetitle{
@@ -186,10 +191,22 @@ form{
         max-width: 100%;
     }
     .articleimg{
-        width: 50%;
+        width: 25%;
     }
     .checkoutpart{
         width: 100%;
+    }
+}
+
+@media (max-width: 801px) {
+    .articleimg{
+        width: 25%;
+    }
+}
+
+@media (max-width: 620px) {
+    .articleimg{
+        width: 40%;
     }
 }
 
