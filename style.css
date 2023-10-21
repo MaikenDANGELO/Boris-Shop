@@ -124,13 +124,6 @@ img {
 
 /* Partie Panier */
 
-@media (max-width: 480px) {
-    .souspanier{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .cartpagetitle{
     text-align: center;
     font-size: 200%;
@@ -182,7 +175,6 @@ a{
 }
 
 .articleimg:hover{
-    width: 25.1%;
     height: fit-content;
 }
 
@@ -240,6 +232,25 @@ a{
 .deletebutton:hover{
     background-color: rgb(255, 37, 37);
     color: white;
+}
+
+@media (max-width: 480px) {
+    .souspanier{
+        display: flex;
+        flex-direction: column;
+    }
+    .articlepanier{
+        width: 100%;
+    }
+    .orderinfo{
+        max-width: 100%;
+    }
+    .articleimg{
+        width: 50%;
+    }
+    .checkoutpart{
+        width: 100%;
+    }
 }
 
 
