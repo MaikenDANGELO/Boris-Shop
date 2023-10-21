@@ -1,73 +1,73 @@
 label {
-    font-family: sans-serif;
-    font-size: 1rem;
-    padding-right: 10px;
-  }
-  
-  select {
-    font-size: 0.9rem;
-    padding: 2px 5px;
-  }
-
-
-.image{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 400px;
-    height: 400px;
-    box-shadow: inset;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-right: 10px;
 }
 
-.machin{
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
+
+.image {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 400px;
+  height: 400px;
+  box-shadow: inset;
+}
+
+.machin {
   display: flex;
   flex-direction: row;
   gap: 2%;
 }
 
-h2{
-width: 450px;
-height: 35px;
-border: solid rgb(0, 0, 0) 0px;
-margin-left: 50px;
-margin-top: 50px;
-  }
+h2 {
+  width: 450px;
+  height: 35px;
+  border: solid rgb(0, 0, 0) 0px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
 
-h4{
+h4 {
 
   margin-left: 50px;
- }
-p{
-width: 450px;
-height: 100px;
-border: solid rgb(0, 0, 0) 0px;
-margin-left: 50px;
-font
 }
- 
+
+p {
+  width: 450px;
+  height: 100px;
+  border: solid rgb(0, 0, 0) 0px;
+  margin-left: 50px;
+}
+
 
 .quantite {
-    
-    width: 100px;
-    height: 30px;
-    margin-left: 50px;
-    border: solid gray  2px;
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  border: solid gray 2px;
 }
 
 .taille {
   margin-left: 50px;
 }
+
 .addPanier {
-    background-color: gray;
-    border: solid black 2px;
-    margin-left: 50px;
-    color: white;
+  background-color: gray;
+  border: solid black 2px;
+  margin-left: 50px;
+  color: white;
 }
 
-.achat{
-    background-color: gray;
-    border: solid black 2px;
-    color: white;
-    margin-left: 50px;
+.achat {
+  background-color: gray;
+  border: solid black 2px;
+  color: white;
+  margin-left: 50px;
 }
 
 .livraison {
@@ -76,6 +76,6 @@ font
   height: 300px;
 }
 
-.textlivr{
+.textlivr {
   margin-left: 1%;
 }

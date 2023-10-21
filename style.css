@@ -136,11 +136,6 @@ a{
     font-size: 16px;
 }
 
-a:hover{
-    font-size: 16.15px;
-    color: rgb(130, 156, 156);
-}
-
 .panier {
     margin: 5%;
     display: flex;
@@ -268,7 +263,13 @@ a:hover{
     margin-bottom: 3%;
 }
 
+.footer-element:hover {
+    color:#EEEEEE;
+    transition: all linear 0.2s;
+}
+
 .footer-title {
+    color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 10%;
 }
