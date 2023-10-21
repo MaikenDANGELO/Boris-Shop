@@ -66,7 +66,6 @@ a{
 }
 
 .checkoutpart input{
-    height: 70780580%;
     width: 100%;
     text-align: center;
 }
@@ -80,13 +79,14 @@ form{
 
 .validercoupon{
     text-align: center;
-    background-color: black;
-    color: white;
-    width: 30%;
+    background-color: lightgray;
+    color: black;
+    width: 102%;
 }
 
 .validercoupon:hover{
-    background-color: rgb(130, 156, 156);
+    background-color: gray;
+    color: white;
 }
 
 .checkouttext{
@@ -113,8 +113,8 @@ form{
 }
 
 .checkoutbutton:hover{
-    background-color: rgb(130, 156, 156);
-    color: black;
+    background-color: gray;
+    color: white;
     transition: 0.2s;
 }
 
@@ -127,8 +127,8 @@ form{
 }
 
 .deletebutton:hover{
-    background-color: rgb(255, 37, 37);
-    color: white;
+    background-color: rgb(255, 122, 122);
+    color: rgb(255, 255, 255);
 }
 
 .accordeon{
