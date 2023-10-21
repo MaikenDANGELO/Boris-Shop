@@ -135,27 +135,30 @@ body {
 }
 
 .footer-col fieldset {
-    padding: 3%;
     border: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 3%;
 }
 
 .footer-col input[type=text] {
     background-color: #333333;
     border: none;
     color:#FFFFFF;
+    font-size: 15px;
     outline: none;
 }
 
-.footer-col input[type=submit] {
+.footer-col .footer-email-submit {
     background-color: #333333;
     border: none;
     color:#FFFFFF;
+    font-size: 15px;
     outline: none;
 }
 
-.footer-col input[type=submit]:hover {
+.footer-col .footer-email-submit:hover {
     text-decoration: underline;
 }
 
