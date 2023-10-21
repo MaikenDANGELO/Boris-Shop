@@ -238,3 +238,27 @@ footer {
 }
 
 /* Fin Partie Panier */
+
+/* Style du footer */
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-element {
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.footer-title {
+    margin-bottom: 10%;
+}
