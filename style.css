@@ -34,9 +34,10 @@ body {
 }
 
 @media (max-width: 480px) {
-    .navbar{
+    .navbar {
         justify-content: center;
     }
+
     .navbar-phone-screen {
         display: flex;
         width: 25%;
@@ -63,7 +64,7 @@ body {
 }
 
 .navbar-phone-screen {
-   flex-direction: column;
+    flex-direction: column;
 }
 
 /* Burger icon */
@@ -80,18 +81,24 @@ body {
 
 /* Style du footer */
 .footer {
-    text-align: center;
     background-color: #333;
-    color: #fff;
-    padding: 10px;
+    padding: 2%;
     clear: both;
     margin-top: 10%;
+}
+
+.footer-devider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .footer-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 45%;
+    padding: 2%;
 }
 
 .footer-col {
@@ -99,16 +106,61 @@ body {
     flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
+}
+
+.footer-col-newsletter{
+    justify-content: center;
+    text-align: left;
+}
+
+.footer-newsletter {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.footer-col a {
+    text-decoration: none;
 }
 
 .footer-element {
-    color:#AAAAAA;
+    color: #AAAAAA;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
+.footer-col fieldset {
+    padding: 3%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col input[type=text] {
+    background-color: #333333;
+    border: none;
+    color:#FFFFFF;
+    outline: none;
+}
+
+.footer-col input[type=submit] {
+    background-color: #333333;
+    border: none;
+    color:#FFFFFF;
+    outline: none;
+}
+
+.footer-col input[type=submit]:hover {
+    text-decoration: underline;
+}
+
 .footer-element:hover {
-    color:#EEEEEE;
+    color: #EEEEEE;
     transition: all linear 0.2s;
 }
 
@@ -116,4 +168,18 @@ body {
     color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 10%;
+}
+
+.footer-c {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+    .footer-devider{
+        flex-direction: column;
+    }
+    .footer-row {
+        width: 95%;
+    }
 }
