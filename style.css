@@ -54,7 +54,7 @@ img {
     color: black;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
     .navbar{
         justify-content: center;
     }
@@ -68,7 +68,7 @@ img {
     }
 }
 
-@media (min-width:390px) {
+@media (min-width: 480px) {
     .navbar-phone-screen {
         display: none;
     }
@@ -240,6 +240,10 @@ footer {
 /* Fin Partie Panier */
 
 /* Style du footer */
+footer {
+    margin-top: 10%;
+}
+
 .footer-row {
     display: flex;
     flex-direction: row;
@@ -254,11 +258,12 @@ footer {
 }
 
 .footer-element {
-    margin-top: 2%;
-    margin-bottom: 2%;
-
+    color:#AAAAAA;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .footer-title {
+    font-weight: bold;
     margin-bottom: 10%;
 }
