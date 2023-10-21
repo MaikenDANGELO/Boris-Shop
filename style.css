@@ -117,6 +117,13 @@ img {
 }
 
 /* Partie Panier */
+
+.cartpagetitle{
+    text-align: center;
+    font-size: 4vh;
+    letter-spacing: 1vh;
+}
+
 a{
     text-decoration: none;
     color: black;
