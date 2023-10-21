@@ -133,13 +133,14 @@ a:hover{
     display: flex;
     gap: 5%;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
 }
 
 .souspanier{
     display: flex;
     flex-direction: row;
     gap: 10%;
+    max-width: 100%;
 }
 
 .articlepanier{
@@ -155,9 +156,14 @@ a:hover{
     gap: 5%;
 }
 
-.article img{
-    width: 20%;
-    border: 1, 1, 1,black;
+.articleimg{
+    width: 25%;
+    height: fit-content;
+}
+
+.articleimg:hover{
+    width: 25.1%;
+    height: fit-content;
 }
 
 .checkoutpart{
@@ -168,7 +174,7 @@ a:hover{
 
 .checkoutpart input{
     width: 100%;
-    height: 25px;
+    height: 40px;
     text-align: center;
 }
 
@@ -179,12 +185,12 @@ a:hover{
 
 .checkouttext1{
     text-align: left;
-    width: 60%;
+    width: 40%;
 }
 
 .checkouttext2{
     text-align: right;
-    width: 100%;
+    width: 75%;
 }
 
 .checkoutbutton{
@@ -201,6 +207,19 @@ a:hover{
     font-size: 16.2px;
     padding-top: 3.05%;
     padding-bottom: 3.05%;
+}
+
+.deletebutton{
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 8%;
+
+}
+
+.deletebutton:hover{
+    background-color: rgb(255, 37, 37);
+    color: white;
 }
 
 /* Fin Partie Panier */
