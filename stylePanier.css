@@ -81,7 +81,7 @@ form{
     text-align: center;
     background-color: lightgray;
     color: black;
-    width: 102%;
+    width: 101.5%;
 }
 
 .validercoupon:hover{
@@ -171,7 +171,7 @@ form{
     transition: max-height 0.2s ease-out;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1025px) {
     .cartpagetitle{
         letter-spacing: 1.5vw;
     }
