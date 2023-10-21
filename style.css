@@ -3,7 +3,11 @@ body {
     padding: 0;
 }
 
-/* Début style de la barre de navigation */
+/* 
+########################################
+Début du style de la barre de navigation 
+########################################
+*/
 .navbar {
     background-color: #444444;
     display: flex;
@@ -77,9 +81,17 @@ body {
     margin: 6px 25%;
 }
 
-/* Fin du style de la barre de navigation */
+/* 
+######################################
+Fin du style de la barre de navigation 
+######################################
+*/
 
-/* Style du footer */
+/* 
+########################
+Début du style du footer 
+########################
+*/
 .footer {
     background-color: #333;
     padding: 2%;
@@ -87,12 +99,15 @@ body {
     margin-top: 10%;
 }
 
+/* Style du premier conteneur du footer, contient tout les elements sauf le c Boris Shop */
 .footer-devider {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* Flex box qui contiennent respectivment la newsletter et les liens utiles
+Changent de ligne à colone pour le responsive */
 .footer-row {
     display: flex;
     flex-direction: row;
@@ -101,6 +116,7 @@ body {
     padding: 2%;
 }
 
+/* Flex box contenant chacune une colone de lien utile */
 .footer-col {
     display: flex;
     flex-direction: column;
@@ -109,80 +125,97 @@ body {
     text-align: center;
 }
 
-.footer-col-newsletter{
-    justify-content: center;
-    text-align: left;
-}
-
+/* Style du titre de la newsletter */
 .footer-newsletter {
     font-size: 24px;
     color: #FFFFFF;
 }
 
+/* Style du texte de la newsletter */
 .footer-text {
     color: #AAAAAA;
     font-size: 14px;
 }
 
-.footer-col a {
-    text-decoration: none;
-}
-
+/* Style des liens dans les liens utile */
 .footer-element {
     color: #AAAAAA;
     margin-top: 3%;
     margin-bottom: 3%;
+    text-decoration: none;
 }
 
+/* Flex box contenant l'email pour la newsletter */
 .footer-col fieldset {
     border: none;
     display: flex;
     flex-direction: row;
+    gap:5%;
     justify-content: center;
     padding: 3%;
 }
 
+/* Style de l'input text de la newsletter */
 .footer-col input[type=text] {
     background-color: #333333;
     border: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 15px;
     outline: none;
+    transition: all linear 0.1s;
 }
 
+.footer-col input[type=text]:hover {
+    background-color: #444444;
+    transition: all linear 0.1s;
+}
+
+/* Style du "bouton" S'inscrire */
 .footer-col .footer-email-submit {
     background-color: #333333;
     border: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 15px;
     outline: none;
+    text-decoration: none;
 }
 
 .footer-col .footer-email-submit:hover {
     text-decoration: underline;
 }
 
+/* Style des liens utiles */
 .footer-element:hover {
     color: #EEEEEE;
     transition: all linear 0.2s;
 }
 
+/* Style des titres des colones de liens utiles */
 .footer-title {
     color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 10%;
 }
 
+/* Style du c Boris Shop */
 .footer-c {
     text-align: center;
     color: #FFFFFF;
 }
 
+/* Partie responsive du footer */
 @media (max-width: 480px) {
-    .footer-devider{
+    .footer-devider {
         flex-direction: column;
     }
+
     .footer-row {
         width: 95%;
     }
 }
+
+/*
+###################### 
+Fin du style du footer
+###################### 
+*/
