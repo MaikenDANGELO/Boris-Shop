@@ -66,9 +66,27 @@ a{
 }
 
 .checkoutpart input{
+    height: 70780580%;
     width: 100%;
-    height: 140%;
     text-align: center;
+}
+
+form{
+    gap: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.validercoupon{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 30%;
+}
+
+.validercoupon:hover{
+    background-color: rgb(130, 156, 156);
 }
 
 .checkouttext{
@@ -97,9 +115,6 @@ a{
 .checkoutbutton:hover{
     background-color: rgb(130, 156, 156);
     color: black;
-    font-size: 16.2px;
-    padding-top: 3.05%;
-    padding-bottom: 3.05%;
     transition: 0.2s;
 }
 
