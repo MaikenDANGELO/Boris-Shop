@@ -1,0 +1,178 @@
+/* Partie Panier */
+
+img{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.cartpagetitle{
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 2vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.orderinfo{
+    padding-top: 5%;
+    max-width: 50%;
+}
+
+.panier {
+    margin: 5%;
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.souspanier{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    max-width: 100%;
+}
+
+.articlepanier{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5%;
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.articleimg{
+    width: 25%;
+    height: fit-content;
+}
+
+.articleimg:hover{
+    height: fit-content;
+}
+
+.checkoutpart{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.checkoutpart input{
+    width: 100%;
+    height: 140%;
+    text-align: center;
+}
+
+.checkouttext{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkouttext1{
+    text-align: left;
+    width: 40%;
+}
+
+.checkouttext2{
+    text-align: right;
+    width: 75%;
+}
+
+.checkoutbutton{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.checkoutbutton:hover{
+    background-color: rgb(130, 156, 156);
+    color: black;
+    font-size: 16.2px;
+    padding-top: 3.05%;
+    padding-bottom: 3.05%;
+    transition: 0.2s;
+}
+
+.deletebutton{
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 8%;
+
+}
+
+.deletebutton:hover{
+    background-color: rgb(255, 37, 37);
+    color: white;
+}
+
+.accordeon{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 1%;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.actif:hover{
+    background-color: #eeeeee;
+}
+
+.accordeon:hover{
+    background-color: #eeeeee;
+}
+
+.accordeon:after{
+    content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.actif:after{
+    content: "\2796";
+}
+
+.panel{
+    padding: 0.2%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 480px) {
+    .souspanier{
+        display: flex;
+        flex-direction: column;
+    }
+    .articlepanier{
+        width: 100%;
+    }
+    .orderinfo{
+        max-width: 100%;
+    }
+    .articleimg{
+        width: 50%;
+    }
+    .checkoutpart{
+        width: 100%;
+    }
+}
+
+/* Fin Partie Panier */
