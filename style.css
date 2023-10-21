@@ -219,6 +219,7 @@ a{
     font-size: 16.2px;
     padding-top: 3.05%;
     padding-bottom: 3.05%;
+    transition: 0.2s;
 }
 
 .deletebutton{
@@ -232,6 +233,42 @@ a{
 .deletebutton:hover{
     background-color: rgb(255, 37, 37);
     color: white;
+}
+
+.accordeon{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 1%;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.active, .accordeon:hover{
+    background-color: #eeeeee;
+}
+
+.accordeon::after{
+    content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2796";
+}
+
+.panneau{
+    padding: 0.2%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 @media (max-width: 480px) {

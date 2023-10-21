@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script_navbar.js"></script>
+    <script src="script_accordeon.js"></script>
     <title>Panier</title>
 </head>
 
 <body>
-
     <div class="navbar">
         <div class="navbar-full-screen">
             <a href="index.html">Home</a>
@@ -115,15 +115,23 @@
             <div class="orderinfo">
                 <h3>Information de commande</h3>
                 <hr>
-                <h5>Politique de retour</h5>
-                <p>Ceci est un exemple de politique de retour, ce qui est tout ce dont vous avez besoin de
-                    savoir à
-                    propos de
-                    notre politique de retour.</p>
+                <button class="accordeon">Politique de retour</button>
+                    <div class="panneau">
+                        <p>Ceci est un exemple de politique de retour, ce qui est tout ce dont vous avez besoin de
+                            savoir à
+                            propos de
+                            notre politique de retour.</p>
+                    </div>
                 <hr>
-                <h5>Options de livraison</h5>
+                <button class="accordeon">Options de livraison</button>
+                <div class="panneau">
+                    <p>Lorem Ipsum</p>
+                </div>
                 <hr>
-                <h5>Options de livraison</h5>
+                <button class="accordeon">Options de livraison</button>
+                <div class="panneau">
+                    <p>Lorem Ipsum</p>
+                </div>
                 <hr>
             </div>
         </div>
@@ -157,6 +165,6 @@
             <p>&copy; Boris Shop</p>
         </div>
     </div>
+    <script src="script_accordeon.js"></script>
 </body>
-
 </html>
