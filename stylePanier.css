@@ -1,15 +1,4 @@
 /* Partie Panier */
-@font-face {
-    font-family: Beaufort;
-    src: url(/fonts/beaufort/BeaufortforLOL-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: Spiegel;
-    src: url(/fonts/spiegel/WOFF2/SpiegelSans-5Regular_TRIAL.woff2);
-    font-weight: normal;
-}
 
 body{
     font-family: Spiegel;
@@ -39,7 +28,7 @@ a{
 .orderinfo{
     padding-top: 5%;
     max-width: 50%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .panier {
@@ -100,12 +89,14 @@ form{
     text-align: center;
     background-color: lightgray;
     color: black;
-    width: 101.5%;
+    height: 2vh;
+    width: 101%;
 }
 
 .validercoupon:hover{
     background-color: gray;
     color: white;
+    transition: 0.1s;
 }
 
 .checkouttext{
@@ -127,6 +118,7 @@ form{
     text-align: center;
     background-color: black;
     color: white;
+    font-weight: bold;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -148,6 +140,7 @@ form{
 .deletebutton:hover{
     background-color: rgb(255, 122, 122);
     color: rgb(255, 255, 255);
+    transition: 0.1s;
 }
 
 .accordeon{
@@ -160,6 +153,7 @@ form{
     border: none;
     outline: none;
     transition: 0.2s;
+    font-size: 15px;
 }
 
 .actif:hover{
@@ -172,7 +166,7 @@ form{
 
 .accordeon:after{
     content: '\02795';
-    font-size: 13px;
+    font-size: 15px;
     color: black;
     float: right;
     margin-left: 5px;
