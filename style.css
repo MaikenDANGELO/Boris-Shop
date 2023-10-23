@@ -174,16 +174,11 @@ Changent de ligne à colone pour le responsive */
 
 /* Style de l'input text de la newsletter */
 .footer-col input[type=text] {
-    background-color: #333333;
+    background-color: #444444;
     border: none;
     color: #FFFFFF;
     font-size: 15px;
     outline: none;
-    transition: all linear 0.1s;
-}
-
-.footer-col input[type=text]:hover {
-    background-color: #444444;
     transition: all linear 0.1s;
 }
 
