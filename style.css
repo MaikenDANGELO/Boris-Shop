@@ -1,6 +1,23 @@
-body {
+@font-face {
+    font-family: Beaufort;
+    src: url(/fonts/beaufort/BeaufortforLOL-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Spiegel;
+    src: url(/fonts/spiegel/WOFF2/SpiegelSans-5Regular_TRIAL.woff2);
+    font-weight: normal;
+}
+
+body{
     margin: 0;
     padding: 0;
+    font-family: Spiegel;
+}
+
+body h1, h2, h3, h4, h5{
+    font-family: Beaufort;
 }
 
 /* 
