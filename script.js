@@ -6,7 +6,7 @@ const showMoreButton = document.getElementById('show-more');
 
 const additionalProducts = [
     {
-        image: '/images/produit/phage.webp',
+        image: 'images/produit/phage.webp',
         title: 'Phage',
         description: 'Pour enfoncer les clous les plus coriaces',
         dataCategory: 'category2',
@@ -14,7 +14,7 @@ const additionalProducts = [
         color: 'Blanc',
         price: '109,99 €'
     }, {
-        image: '/images/produit/sorcerers-shoes.png',
+        image: 'images/produit/sorcerers-shoes.png',
         title: 'Air Sorcerer 1',
         description: 'Pour se déplacer en toute élégance',
         dataCategory: 'category1',
@@ -22,7 +22,7 @@ const additionalProducts = [
         color: 'Bleu',
         price: '109,99 €'
     }, {
-        image: '/images/produit/negatrons-cloak.png',
+        image: 'images/produit/negatrons-cloak.png',
         title: 'Manteau de Négatron',
         description: 'Cette cape permet de vous donne des stats de RM (Résistance au ManqueDeFlow)',
         dataCategory: 'category1',
