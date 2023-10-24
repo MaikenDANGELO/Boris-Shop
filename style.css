@@ -12,14 +12,15 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Spiegel;
-    font-size: 18px;
 }
 
-body h1, h2, h3, h4, h5{
+*{
+    font-family: Spiegel;
+}
+
+.title{
     font-family: Beaufort;
 }
-
 /* 
 ########################################
 Début du style de la barre de navigation 
