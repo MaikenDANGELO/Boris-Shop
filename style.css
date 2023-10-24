@@ -12,9 +12,6 @@
 body{
     margin: 0;
     padding: 0;
-}
-
-*{
     font-family: Spiegel;
 }
 
@@ -28,31 +25,31 @@ Début du style de la barre de navigation
 */
 .navbar {
     background-color: #444444;
+    box-shadow: 0px 2px 5px 1px;
     display: flex;
     overflow: hidden;
-    box-shadow: 0px 2px 5px 1px;
 }
 
 /* Liens dans la barre de navigation */
 .navbar a {
-    float: left;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all linear 0.1s;
 }
 
 /* Lien de la page actuelle */
 .navbar a.active {
     background-color: #333333;
     color: white;
+    transition: all linear 0.1s;
 }
 
 /* Quand un lien est survolé */
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #555555;
+    transition: all linear 0.1s;
 }
 
 @media (max-width: 480px) {
@@ -62,11 +59,15 @@ Début du style de la barre de navigation
 
     .navbar-phone-screen {
         display: flex;
-        width: 25%;
+        width: 100%;
     }
 
     .navbar-full-screen {
         display: none;
+    }
+
+    .navbar a {
+        padding: 2%;
     }
 }
 
@@ -77,6 +78,10 @@ Début du style de la barre de navigation
 
     .navbar-full-screen {
         display: flex;
+    }
+
+    .navbar a {
+        padding: 10% 15%;
     }
 }
 
@@ -92,13 +97,13 @@ Début du style de la barre de navigation
 /* Burger icon */
 
 .burger-icon span {
+    box-shadow: 0px 1px 3px;
     display: flex;
-    width: 50%;
+    width: 10%;
     height: 5px;
-    background-color: black;
-    margin: 6px 25%;
+    background-color: white;
+    margin: 6px 45%;
 }
-
 /* 
 ######################################
 Fin du style de la barre de navigation 
@@ -165,6 +170,7 @@ Changent de ligne à colone pour le responsive */
 
 /* Flex box contenant l'email pour la newsletter */
 .footer-col fieldset {
+    align-items: center;
     border: none;
     display: flex;
     flex-direction: row;
