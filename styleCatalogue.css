@@ -6,20 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-header {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fdraven_hd_league_of_legends-1920x1080.jpg&f=1&nofb=1&ipt=74992a05873cab49e4e1ba47c6d47b928ba3a41adc53b3e3ef85a17331fe0237&ipo=images");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .filters {
     width: 20%;
     padding: 10px;
-    background-color: #fff;
+    background-color: #ffffffcb;
     border: 1px solid #ddd;
     float: left;
     margin-top: 200px;
@@ -46,16 +42,19 @@ header {
 }
 
 .sorting {
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     text-align: right;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 .blue {
     height: 25px;
     width: 25px;
     background-color: blue;
-    border-radius: 50%;
+    border-radius: 12px;
     display: inline-block;
 }
 
@@ -99,7 +98,7 @@ main {
 }
 
 .product {
-    background-color: #fff;
+    background-color: #ffffffd5;
     border: 1px solid #ddd;
     margin: 10px;
     padding: 15px;
@@ -114,7 +113,9 @@ main {
 }
 
 .product h2 {
+    color: white;
     margin: 10px 0;
+    text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 .product .category,
@@ -167,12 +168,13 @@ footer {
 
 @media (max-width: 768px) {
     .sorting {
-        width: 50%;
+        width: 100%;
         text-align: center;
-        margin: 0 auto;
         margin-top: 15px;
-        margin-bottom: 15px;    
+        margin-bottom: 15px;
+        margin-left: 0;
     }
+
     .filters {
         float: none;
         width: 100%;
@@ -225,8 +227,8 @@ input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 0;
-    border: 1px solid #ddd;
+    border-radius: 12;
+    border: 1px solid #000000;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -273,4 +275,38 @@ input[type="radio"]:checked::before {
 
 .product img:hover {
     transform: scale(1.05);
+}
+
+/* Found on https://codepen.io/raubaca/pen/bGWmZje */
+:root {
+  --arrow-bg: rgba(255, 255, 255, 0.7);
+  --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.5);
+}
+
+select {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  width: 20rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &::-ms-expand {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  option {
+    color: inherit;
+    background-color: var(--option-bg);
+  }
 }

@@ -1,3 +1,5 @@
+// Mostly found on stackoverflow, openclassrooms and w3schools
+
 AOS.init();
 
 const main = document.querySelector('.main');
