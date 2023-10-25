@@ -109,7 +109,7 @@ main {
 }
 
 .product img {
-    max-width: 100%;
+    width: 100%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -196,8 +196,7 @@ footer {
     }
 
     .product img {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 100;
     }
 
     .product h2 {
