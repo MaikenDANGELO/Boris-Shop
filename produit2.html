@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleProduit2.css">
     <script src="script_navbar.js"></script>
     <title>Boris' Shop</title>
 </head>
@@ -15,7 +15,7 @@
         <div class="navbar-full-screen">
             <a class="active" href="index.html">Home</a>
             <a href="shop.html">Shop</a>
-            <a href="produit2.html">Produit</a>
+            <a href="produit.html">Produit</a>
             <a href="panier.html">Panier</a>
         </div>
         <div id="navbar-phone-screen" class="navbar-phone-screen">
@@ -34,36 +34,46 @@
             </div>
         </div>
     </div>
-    <div class="main-title title">Boris' Shop</div>
-    <div class="subtitle">Les stéréotypes sur les joueurs de League of Legends ne sont pas que des mythes, la
-        passion pour un jeu est parfois plus importante que la propreté personnelle.
-    </div>
-    <br>
-    <div class="container">
-        <img src="images/caroussel/caroussel_index/league_of_legend.jpg" class="image-accueil image-border">
+
+    <div class="container main-container">
+        <img src="images/produit/negatrons-cloak.png" alt='image_cloak'>
+        <div class="container info-container">
+            <div class="container container-text">
+                <div class="main-title title">Manteau de négatron</div>
+                <div class="prix title">89.99€</div>
+                <div>Manteau de négatron parfait pour tous les joueurs de League of Legends</div>
+            </div>
+            <div class="container button-container">
+                <div class="button bg-orange">
+                    <button>+</button>
+                    <div>2</div>
+                    <button>-</button>
+                </div>
+                <div class="button bg-orange">
+                    <select name="size" id="size">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container button-container">
+                <div class="button bg-black">
+                    <a href="#">Acheter</a>
+                </div>
+                <div class="button bg-black">
+                    <a href="#">Panier</a>
+                </div>
+            </div>
+            <div class="delivery">Livraison sous 48 heures, voir conditions générales*
+                <br>
+                Pour toutes informations, veuillez ne pas contacter le service client
+            </div>
+        </div>
     </div>
 
-    <br>
-    <br>
-
-    <div class="main-title title"> Produits à l'affiche :</div>
-    <div class="container" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="display-product">
-            <img src="images/produit/zhonyas-hourglass.png" alt="Produit 1">
-            <h2 class="title">Sablier de Zhonya</h2>
-            <button>Voir produit</button>
-        </div>
-        <div class="display-product">
-            <img src="images/produit/zz-rot.webp" alt="Produit 2">
-            <h2 class="title">ZZ'Rot</h2>
-            <button>Voir produit</button>
-        </div>
-        <div class="display-product">
-            <img src="images/produit/amplifying-tome.png" alt="Produit 3">
-            <h2 class="title">Tome d'Amplification</h2>
-            <button>Voir produit</button>
-        </div>
-    </div>
     <div class="footer">
         <div class="footer-devider">
             <div class="footer-row">
