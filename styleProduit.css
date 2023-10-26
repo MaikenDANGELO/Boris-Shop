@@ -32,7 +32,7 @@ select {
 }
 
 .bouton button {
-  background-color: gray;
+  background-color: orangered;
   border: solid black 2px;
   color: white;
   margin-top: 5%;
@@ -83,7 +83,7 @@ p {
 @media (max-width: 480px) {
   .machin {
     flex-direction: column;
-  }
+  } 
 
   .conteneur-image {
     width: 90%;
@@ -101,18 +101,32 @@ p {
   }
 
   .options{
+    
     flex-direction: row;
     gap:10%;
   }
-  
+}
   .livraison {
-    margin-left: 5%;
-    width:900%;
-    
+    margin-left: 2%;
+    width:21%;
+    font-size: 250%;
+    border: solid black;
   }
+    
+  
   .aVoirAussi{
     text-align: center;
-    width: 10%;
-    height: 10% ;
+    font-size:  150%;
+    margin-top: 5%;
   }
+
+  .image1{
+    margin-top: 3%;
+    margin-left: 15%;
+    width: 15%;
+    height: 15%;
+  }
+
+.nom{
+  margin-left: 5%;
 }
