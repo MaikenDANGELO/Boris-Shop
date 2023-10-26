@@ -14,7 +14,8 @@ const additionalProducts = [
         dataCategory: 'category2',
         category: 'Divers',
         color: 'Blanc',
-        price: '109,99 €'
+        price: '109,99 €',
+        link: 'phage'
     }, {
         image: 'images/produit/sorcerers-shoes.png',
         title: 'Air Sorcerer 1',
@@ -22,7 +23,8 @@ const additionalProducts = [
         dataCategory: 'category1',
         category: 'Vetement',
         color: 'Bleu',
-        price: '109,99 €'
+        price: '109,99 €',
+        link: 'chaussures'
     }, {
         image: 'images/produit/negatrons-cloak.png',
         title: 'Manteau de Négatron',
@@ -30,7 +32,8 @@ const additionalProducts = [
         dataCategory: 'category1',
         category: 'Vetement',
         color: 'Blanc',
-        price: '89,99 €'
+        price: '89,99 €',
+        link: 'negatron'
     },
 ];
 
@@ -61,7 +64,9 @@ function addProducts(products) {
             <span class="price">${
             product.price
         }</span>
-            <button>Acheter</button>
+            <br><a href="produit2.html#${
+            product.link
+        }"><button>Acheter</button></a>
         `;
         main.appendChild(productElement);
     });

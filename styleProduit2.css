@@ -24,9 +24,17 @@ body {
     max-height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
+:target {
+    display: flex;
+}
+
 .container-text {
     flex-direction: column;
-    margin: 5% 0 10%;
+    margin: 10% 0 10%;
 }
 
 .main-title {
