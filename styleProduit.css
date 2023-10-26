@@ -107,6 +107,10 @@ p {
   
   .livraison {
     margin-left: 5%;
-    width:90%;
+    width:900%;
+    
+  }
+  .aVoirAussi{
+    text-align: center;
   }
 }
