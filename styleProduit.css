@@ -1,3 +1,10 @@
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fdraven_hd_league_of_legends-1920x1080.jpg&f=1&nofb=1&ipt=74992a05873cab49e4e1ba47c6d47b928ba3a41adc53b3e3ef85a17331fe0237&ipo=images");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 label {
   font-family: sans-serif;
   font-size: 1rem;
@@ -15,6 +22,7 @@ select {
   gap: 2%;
   width: 100%;
   margin-top: 5%;
+  background-color: #000000e0;
 }
 
 .conteneur-image {
@@ -42,6 +50,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 35%;
+  color: white;
 }
 
 .informations {
@@ -80,7 +89,8 @@ p {
   margin-left: 2%;
   width: 20%;
   font-size: 120%;
-  border: solid black;
+  border: solid white;
+  color: white;
 }
 
 .image1 {
