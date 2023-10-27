@@ -79,7 +79,7 @@ p {
 .livraison {
   margin-left: 2%;
   width: 20%;
-  font-size: 250%;
+  font-size: 120%;
   border: solid black;
 }
 
@@ -149,7 +149,6 @@ button:hover {
 
   .conteneur-image {
     width: 90%;
-    flex-direction: row;
     align-items: center;
   }
 
