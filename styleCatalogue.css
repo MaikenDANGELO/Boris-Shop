@@ -1,3 +1,4 @@
+/* généré par GitHub Copilot après demande d'amélioration du CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -102,6 +103,7 @@ main {
     border: 1px solid #ddd;
     margin: 10px;
     padding: 15px;
+    /* https://developer.mozilla.org/fr/docs/web/css/calc */ 
     width: calc(33.33% - 20px);
     text-align: center;
     position: relative;
@@ -188,7 +190,7 @@ footer {
         float: none;
         width: 100%;
         text-align: center;
-        margin: 0px ;
+        margin: 0px;
     }
 
     .main-container {
@@ -232,6 +234,7 @@ footer {
     }
 }
 
+/* https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/radio */
 input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -259,7 +262,7 @@ input[type="radio"]:checked::before {
     animation-name: radio-select;
     animation-duration: 0.5s;
 }
-
+/* https://developer.mozilla.org/fr/docs/Web/CSS/@keyframes */
 @keyframes radio-select {
     0% {
         transform: scale(1);
@@ -272,6 +275,7 @@ input[type="radio"]:checked::before {
     }
 }
 
+/* https://stackoverflow.com/questions/9241692/hover-but-not-on-a-specific-class */
 @media (max-width: 768px) {
     button:hover:not(:active) {
         transform: scale(1.1);
@@ -280,13 +284,21 @@ input[type="radio"]:checked::before {
     #show-more:hover:not(:active) {
         transform: scale(1.1);
     }
+
+    input[type="radio"]:checked::before {
+        animation-name: none;
+    }
+
+    .product img:hover:not(:active){
+        transform: scale(1.05);
+    }
 }
 
 .product img:hover {
     transform: scale(1.05);
 }
 
-/* Found on https://codepen.io/raubaca/pen/bGWmZje */
+/* https://codepen.io/raubaca/pen/bGWmZje */
 :root {
   --arrow-bg: rgba(255, 255, 255, 0.7);
   --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
