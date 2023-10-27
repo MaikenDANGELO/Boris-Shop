@@ -126,10 +126,6 @@ form {
     border-radius: 7.5px;
 }
 
-form:focus-within {
-    outline: 1px solid gray;
-}
-
 /* .validercoupon {
     text-align: center;
     background-color: lightgray;
@@ -161,15 +157,16 @@ form:focus-within {
 
 .checkoutbutton {
     text-align: center;
-    background-color: black;
+    background-color: #0397AB;
     color: white;
     font-weight: bold;
     padding-top: 3%;
     padding-bottom: 3%;
+    border: none;
 }
 
 .checkoutbutton:hover {
-    background-color: gray;
+    background-color: #0AC8B9;
     color: white;
     transition: 0.2s;
 }
@@ -233,10 +230,14 @@ form:focus-within {
 }
 
 button.validercoupon {
-    border: 1px solid gray;
-    background: black;
+    border: none;
+    background: #0397AB;
     color: white;
     border-radius: 0 7.5px 7.5px 0;
+}
+
+button.validercoupon:hover {
+    background-color: #0AC8B9;
 }
 
 @media (max-width: 1240px) {
