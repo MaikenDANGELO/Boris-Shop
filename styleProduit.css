@@ -108,7 +108,7 @@ p {
 }
 
 .main-title {
-  color: black;
+  color: #FFFFFF;
   font-size: 48px;
   justify-content: center;
   margin-top: 5%;
@@ -118,8 +118,9 @@ p {
 }
 
 .display-product {
-  background-color: #ffffffc5;
-  border: 1px solid #ddd;
+  background-color: #00000090;
+  border: 1px solid #000000;
+  color: #C8AA6E;
   margin: 10px;
   padding: 15px;
   width: calc(33.33% - 20px);

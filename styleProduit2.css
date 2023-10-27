@@ -10,7 +10,8 @@ body {
 }
 
 .main-container {
-    background-color: #FFFFFFe0;
+    background-color: #000000c0;
+    color:#FFFFFF;
     flex-direction: row;
     gap: 5%;
     width: 100%;
@@ -38,12 +39,14 @@ body {
 }
 
 .main-title {
+    color: #C89B3C;
     font-size: 200%;
     margin-bottom: 2%;
     margin-top: 2%;
 }
 
 .prix {
+    color: #C8AA6E;
     font-size: 150%;
     margin-bottom: 3%;
 }
@@ -97,7 +100,7 @@ body {
 }
 
 .delivery {
-    color: #555555;
+    color: #999999;
     font-size: 60%;
     margin: 0% 5% 3%;
 }
@@ -119,8 +122,9 @@ body {
 }
 
 .display-product {
-    background-color: #ffffffc5;
-    border: 1px solid #ddd;
+    background-color: #00000090;
+    border: 1px solid #000000;
+    color: #C8AA6E;
     margin: 10px;
     padding: 15px;
     width: calc(33.33% - 20px);
@@ -154,7 +158,7 @@ body {
 }
 
 .bg-black {
-    background-color: #000000;
+    background-color: #0397AB;
 }
 
 .bg-orange {
