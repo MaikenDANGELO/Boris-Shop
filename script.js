@@ -2,6 +2,7 @@
 
 AOS.init();
 
+// https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/radio
 const main = document.querySelector('.main');
 const sortSelect = document.getElementById('sort-by');
 const showMoreButton = document.getElementById('show-more');

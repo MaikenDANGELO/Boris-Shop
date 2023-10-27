@@ -112,7 +112,16 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
+/* https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css */
+@font-face {
+    font-family: 'Beaufort';
+    src: url('/fonts/beaufort/BeaufortforLOL-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .product h2 {
+    font-family: 'Beaufort';
     color: white;
     margin: 10px 0;
     text-shadow: black 0.1em 0.1em 0.1em;
