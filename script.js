@@ -1,3 +1,4 @@
+// Mehdi BEN SMAIL
 // Mostly found on stackoverflow, openclassrooms and w3schools
 
 AOS.init();
