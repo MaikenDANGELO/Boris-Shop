@@ -181,12 +181,16 @@ Changent de ligne à colone pour le responsive */
 
 /* Style de l'input text de la newsletter */
 .footer-col input[type=text] {
-    background-color: #444444;
+    background-color: #333333;
     border: none;
     color: #FFFFFF;
     font-size: 15px;
     outline: none;
     transition: all linear 0.1s;
+}
+
+.footer form{
+    background-color: #333333;
 }
 
 /* Style du "bouton" S'inscrire */
