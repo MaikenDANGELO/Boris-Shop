@@ -34,7 +34,7 @@ body {
 
 .container-text {
     flex-direction: column;
-    margin: 10% 0 10%;
+    margin: 10% 10% 10% 0%;
 }
 
 .main-title {
@@ -99,7 +99,7 @@ body {
 .delivery {
     color: #555555;
     font-size: 60%;
-    margin-left: 5%;
+    margin: 0% 5% 3%;
 }
 
 /* Style des produits a voir aussi */
