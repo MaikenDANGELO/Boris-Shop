@@ -15,8 +15,9 @@ body {
 .filters {
     width: 20%;
     padding: 10px;
-    background-color: #ffffffcb;
-    border: 1px solid #ddd;
+    background-color: #00000090;
+    border: 1px solid #000000;
+    color: #FFFFFF;
     float: left;
     margin-top: 200px;
     margin-left: 45px;
@@ -33,6 +34,10 @@ body {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+}
+
+.filters label input {
+    border-color: #FFFFFF;
 }
 
 .filters select {
@@ -98,8 +103,8 @@ main {
 }
 
 .product {
-    background-color: #ffffffd5;
-    border: 1px solid #ddd;
+    background-color: #00000090;
+    border: 1px solid #000000;
     margin: 10px;
     padding: 15px;
     /* https://developer.mozilla.org/fr/docs/web/css/calc */ 
@@ -121,9 +126,13 @@ main {
     font-style: normal;
 }
 
+.product {
+    color: #FFFFFF;
+}
+
 .product h2 {
+    color: #C89B3C;
     font-family: 'Beaufort';
-    color: white;
     margin: 10px 0;
     text-shadow: black 0.1em 0.1em 0.1em;
 }
