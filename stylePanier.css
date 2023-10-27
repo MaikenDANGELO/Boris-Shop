@@ -95,10 +95,6 @@ a {
     height: fit-content;
 }
 
-.articleimg:hover {
-    height: fit-content;
-}
-
 .checkoutpart {
     display: flex;
     flex-direction: column;
@@ -157,7 +153,8 @@ form {
 
 .checkoutbutton {
     text-align: center;
-    background-color: #0397AB;
+    background: linear-gradient(80deg, #005A82, #0AC8B9);
+    /* background-color: #0397AB; */
     color: white;
     font-weight: bold;
     padding-top: 3%;
@@ -166,9 +163,9 @@ form {
 }
 
 .checkoutbutton:hover {
-    background-color: #0AC8B9;
+    transition: all 0.2s ease-out;
+    background: linear-gradient(170deg, #005A82, #0AC8B9);
     color: white;
-    transition: 0.2s;
 }
 
 .deletebutton {
@@ -199,11 +196,11 @@ form {
 }
 
 .actif:hover {
-    background-color: rgb(128,128,128,0.85);
+    background-color: #010A13d8;
 }
 
 .accordeon:hover {
-    background-color: rgb(128,128,128,0.85);
+    background-color: #010A13d8;
 }
 
 .accordeon:after {
@@ -226,18 +223,19 @@ form {
     transition: max-height 0.2s ease-out;
 }
 .panel p{
-    margin: 0.2%;
+    margin: 1%;
 }
 
 button.validercoupon {
     border: none;
-    background: #0397AB;
+    background: linear-gradient(80deg, #005A82, #0AC8B9);
     color: white;
     border-radius: 0 7.5px 7.5px 0;
 }
 
 button.validercoupon:hover {
-    background-color: #0AC8B9;
+    transition: all 0.2s ease-out;
+    background: linear-gradient(170deg, #005A82, #0AC8B9);
 }
 
 @media (max-width: 1240px) {
