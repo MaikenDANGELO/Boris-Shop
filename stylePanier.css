@@ -230,6 +230,8 @@ button.validercoupon {
     border: none;
     background: linear-gradient(80deg, #005A82, #0AC8B9);
     color: white;
+}
+button.validercoupon:hover {
     border-radius: 0 7.5px 7.5px 0;
 }
 
